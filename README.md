@@ -1,10 +1,10 @@
 # Rust built operating system
 
 ## Details
-1. It's based on this wiki: https://os.phil-opp.com/freestanding-rust-binary/
-2. The primary goal for this is educating myself on how to operating systems work.
-3. The program is built with --edition 2021 using rustup. My work environment:
- - Arch Linux on x86_64 AMD Ryzen 5 3600X CPU
+- It's based on this wiki: https://os.phil-opp.com/freestanding-rust-binary/
+- The primary goal for this is educating myself on how to operating systems work.
+- The program is built with --edition 2021 using rustup. My work environment:
+- - Arch Linux on x86_64 AMD Ryzen 5 3600X CPU
 
 ## Building the app
 In order to actually build the application,you need to define
