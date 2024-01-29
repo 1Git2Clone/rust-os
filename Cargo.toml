@@ -1,0 +1,16 @@
+[package]
+name = "operating-system-rust"
+version = "0.1.0"
+edition = "2021"
+
+# (CPI) Custom Panic Implementation.
+# - "abort" -> disable stack unwinding on panic
+[profile.dev]
+panic = "abort"
+[profile.release]
+panic = "abort"
+# END of CPI
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
