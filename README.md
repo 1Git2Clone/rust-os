@@ -12,6 +12,7 @@ a special target value. To avoid any linker errors you need to
 disable the dependency for the default C runtime.
 
 `rustup target add thumbv7em-none-eabihf`
+
 `cargo build --target thumbv7em-none-eabihf`
 
 - Reference: https://clang.llvm.org/docs/CrossCompilation.html#target-triple
