@@ -16,7 +16,7 @@ disable the dependency for the default C runtime.
 `cargo build --target thumbv7em-none-eabihf`
 
 - Reference: [Clang LLVM](https://clang.llvm.org/docs/CrossCompilation.html#target-triple)
-### Individual OS alternative
+### Individual OS alternative (You can ignore this.)
 - Linux
 - - `cargo rustc -- -C link-arg=-nostartfiles`
 - Windows
