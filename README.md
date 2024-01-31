@@ -24,15 +24,23 @@ disable the dependency for the default C runtime.
 - macOS
 - - `cargo rustc -- -C link-args="-e __start -static -nostartfiles"`
 
-### Getting to run a QEMU instance of it (x86_64)
+### Setting the boot image.
 - I highly recommend using rustup for the ease of setting up.
 - - `rusup default nightly`
 - - `cargo install bootimage`
 - - `rustup component add llvm-tools-preview`
 - - `cargo bootimage`
-- - NOTE: your terminal should be opened at the root directory at the repo.
-- - If it isn't, then you need to modify the `file=` part to your full target path.
-- - `qemu-system-x86_64 -drive format=raw, file=target/x86_64-config/debug/bootimage-operating-system-rust.bin`
+
+### Getting it to run on QEMU VM
+- NOTE: your terminal should be opened at the root directory at the repo.
+- If it isn't, then you need to modify the `file=` part to your full target path.
+- `qemu-system-x86_64 -drive format=raw, file=target/x86_64-config/debug/bootimage-operating-system-rust.bin`
+
+### Writing it onto a disk (be careful!)
+- (For Linux) `dd if=target/x86_64-blog_os/debug/bootimage-blog_os.bin of=/dev/sdX && sync`
+- ^ Replace sdX with the drive/usb stick you want to write it in.
+- !!! It'll delete all the data on that drive/usb stick. !!!
+
 
 
 
