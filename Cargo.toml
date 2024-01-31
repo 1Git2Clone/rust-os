@@ -1,3 +1,5 @@
+# Cargo.toml
+
 [package]
 name = "operating-system-rust"
 version = "0.1.0"
@@ -13,4 +15,6 @@ panic = "abort"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+# It doesn't build on newer versions.
 [dependencies]
+bootloader = "0.9.24"

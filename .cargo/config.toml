@@ -1,0 +1,11 @@
+# .cargo/config.toml
+
+# C features like memcpy w/o the need of the internal C libs.
+# recompile "core" on demand instead of using precompiled versions.
+[unstable]
+build-std-features = ["compiler-builtins-mem"]
+build-std = ["core", "compiler_builtins"]
+
+# override the default build target.
+[build]
+target = "x86_64-config.json"
