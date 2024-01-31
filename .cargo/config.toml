@@ -9,3 +9,6 @@ build-std = ["core", "compiler_builtins"]
 # override the default build target.
 [build]
 target = "x86_64-config.json"
+
+[target.'cfg(target_os = "none")']
+runner = "bootimage runner"

@@ -18,3 +18,9 @@ panic = "abort"
 # It doesn't build on newer versions.
 [dependencies]
 bootloader = "0.9.24"
+volatile = "0.2.6"
+spin = "0.9.8"
+
+[dependencies.lazy_static]
+version = "1.4.0"
+features = ["spin_no_std"]

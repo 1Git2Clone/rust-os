@@ -35,6 +35,7 @@ disable the dependency for the default C runtime.
 - NOTE: your terminal should be opened at the root directory at the repo.
 - If it isn't, then you need to modify the `file=` part to your full target path.
 - `qemu-system-x86_64 -drive format=raw, file=target/x86_64-config/debug/bootimage-operating-system-rust.bin`
+- ALTERNATIVE: If your terminal is in the repo, you can just type `cargo run`
 
 ### Writing it onto a disk (be careful!)
 - (For Linux) `dd if=target/x86_64-blog_os/debug/bootimage-blog_os.bin of=/dev/sdX && sync`
